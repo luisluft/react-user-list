@@ -25,6 +25,7 @@ const AddUser = (props) => {
       console.log("age must be greater than 1");
       return;
     }
+    props.onAddUser(enteredUsername, enteredAge);
     setEnteredUsername("");
     setEnteredAge("");
   };
